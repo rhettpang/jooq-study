@@ -33,9 +33,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jooq</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
     </dependencies>
 
-        <build>
+        <!--<build>
             <plugins>
                 <plugin>
                     <groupId>org.jooq</groupId>
@@ -67,27 +75,27 @@
                         <generator>
                             <database>
                                 <name>org.jooq.util.mysql.MySQLDatabase</name>
-                                <!--include和exclude用于控制为数据库中哪些表生成代码-->
+                                &lt;!&ndash;include和exclude用于控制为数据库中哪些表生成代码&ndash;&gt;
                                 <includes>.*</includes>
-                                <!--<excludes></excludes>-->
+                                &lt;!&ndash;<excludes></excludes>&ndash;&gt;
 
-                                <!--数据库名称-->
+                                &lt;!&ndash;数据库名称&ndash;&gt;
                                 <inputSchema>jooqdb</inputSchema>
                             </database>
 
                             <generate>
-                                <!--生成dao和pojo-->
+                                &lt;!&ndash;生成dao和pojo&ndash;&gt;
                                 <daos>true</daos>
                                 <pojos>true</pojos>
-                                <!--把数据库时间类型映射到java 8时间类型-->
+                                &lt;!&ndash;把数据库时间类型映射到java 8时间类型&ndash;&gt;
                                 <javaTimeTypes>true</javaTimeTypes>
-                                <!--<interfaces>true</interfaces>-->
-                                <!--不在生成的代码中添加spring注释，比如@Repository-->
+                                &lt;!&ndash;<interfaces>true</interfaces>&ndash;&gt;
+                                &lt;!&ndash;不在生成的代码中添加spring注释，比如@Repository&ndash;&gt;
                                 <springAnnotations>false</springAnnotations>
                             </generate>
 
                             <target>
-                                <!--生成代码文件的包名及放置目录-->
+                                &lt;!&ndash;生成代码文件的包名及放置目录&ndash;&gt;
                                 <packageName>com.pk.db.gen</packageName>
                                 <directory>src/main/java</directory>
                             </target>
@@ -96,5 +104,5 @@
                     </configuration>
                 </plugin>
             </plugins>
-        </build>
+        </build>-->
 </project>
