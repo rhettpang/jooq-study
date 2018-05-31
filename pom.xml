@@ -59,7 +59,7 @@
                     <configuration>
                         <jdbc>
                             <driver>com.mysql.jdbc.Driver</driver>
-                            <url>jdbc:mysql://10.10.20.154:3306/</url>
+                            <url>jdbc:mysql://localhost:3306/</url>
                             <username>root</username>
                             <password>root</password>
                         </jdbc>

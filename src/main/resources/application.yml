@@ -1,0 +1,8 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jooqdb?useUnicode=true&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&verifyServerCertificate=false
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 10

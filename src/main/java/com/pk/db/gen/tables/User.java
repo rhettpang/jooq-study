@@ -40,7 +40,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class User extends TableImpl<UserRecord> {
 
-    private static final long serialVersionUID = 886335680;
+    private static final long serialVersionUID = -71301544;
 
     /**
      * The reference instance of <code>jooqdb.user</code>
@@ -73,7 +73,7 @@ public class User extends TableImpl<UserRecord> {
     /**
      * The column <code>jooqdb.user.sex</code>.
      */
-    public final TableField<UserRecord, Boolean> SEX = createField("sex", org.jooq.impl.SQLDataType.BIT.defaultValue(org.jooq.impl.DSL.inline("b'0'", org.jooq.impl.SQLDataType.BIT)), this, "");
+    public final TableField<UserRecord, Byte> SEX = createField("sex", org.jooq.impl.SQLDataType.TINYINT.defaultValue(org.jooq.impl.DSL.inline("0", org.jooq.impl.SQLDataType.TINYINT)), this, "");
 
     /**
      * The column <code>jooqdb.user.created</code>.

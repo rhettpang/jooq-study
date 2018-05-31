@@ -82,7 +82,7 @@ public class UserDao extends DAOImpl<UserRecord, com.pk.db.gen.tables.pojos.User
     /**
      * Fetch records that have <code>sex IN (values)</code>
      */
-    public List<com.pk.db.gen.tables.pojos.User> fetchBySex(Boolean... values) {
+    public List<com.pk.db.gen.tables.pojos.User> fetchBySex(Byte... values) {
         return fetch(User.USER.SEX, values);
     }
 
